@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(94, 110, 47);
+
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    width: 1200px;
+    /*設定盒外距 但不知道設定多少 所以打auto*/
+    margin: auto;
+    padding: 20px;
+}

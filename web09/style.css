@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.box {
+    background-image: url(./box.png);
+    width: 300px;
+    height: 600px;
+    margin: auto;
+}
+
+.box h1 {}
+
+.box a {
+    background-image: url(./btn01.png);
+
+    height: 60px;
+    display: block;
+    /*不讓圖片溢出方法一 設定總寬度不超過300px*/
+    /* 
+    width: 230px;
+    padding-left: 70px;
+    */
+
+    /*不讓圖片溢出方法二 設定文字縮排 */
+    width: 300px;
+    text-indent: 70px;
+    line-height: 60px;
+
+
+}
+
+
+.box a:hover {}

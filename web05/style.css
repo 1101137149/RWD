@@ -1,0 +1,53 @@
+html,
+body {
+    font-family: Arial, Helvetica, "微軟正黑體", sans-serif
+}
+
+p {}
+
+a {
+
+    display: block;
+    background-color: rgb(123, 54, 250);
+    width: 200px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    /*垂直置中的效果*/
+    /*第一種方法行高要跟高度一樣高*/
+    /*height: 60px;
+    line-height: 60px;*/
+
+    /*第二種方法 設定padding*/
+    padding: 20px 0;
+
+    /*三個條件無先後順序 只要有滿足三個條件即可*/
+    border-top: rgb(26, 4, 36) 6px solid;
+    border-bottom: rgb(26, 4, 36) 6px solid;
+
+    border-radius: 30px 0;
+
+
+    /* Old browsers */
+    background-color: #1691fc;
+    /*漸層設定 目前新版都吃這個設定 除非舊的瀏覽器*/
+    background-image: linear-gradient(135deg, #1691fc 0%, #a9e4f7 31%, #a9e4f7 68%, #a9e4f7 71%, #1691fc 100%);
+
+
+}
+
+a:hover {
+    background-color: rgb(71, 3, 66);
+    color: pink;
+    border: rgb(219, 172, 241) 6px solid;
+
+    border-radius: 30px 30px 30px 30px;
+
+
+}
+
+img {
+    border-radius: 50%;
+
+}

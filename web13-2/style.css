@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+
+* {
+    padding: 0;
+    margin: 0;
+
+
+}
+
+
+
+div {
+    background-image: url(./banner.jpg);
+    /*固定位置範例*/
+    /*  
+    原寬1100
+    width: 450px;
+    原高350
+    height: 230px;
+    margin: auto;
+    設定這個要扣掉寬
+    padding-left: 650px;
+
+    設定這個要扣掉高
+    padding-top: 120px;
+    padding-right: 100px; */
+
+    width: 1200px;
+    height: 350px;
+    margin: auto;
+    position: relative;
+
+
+
+}
+
+
+
+h1 {
+    /*固定定位*/
+    background-color: rgba(253, 215, 215, 0.377);
+    /* margin-bottom: 20px; */
+
+
+
+    /*相對定位*/
+    /*設定浮動*/
+    position: absolute;
+    left: 650px;
+    top: 120px
+}
+
+p {
+
+    background-color: rgba(129, 204, 160, 0.527);
+    position: absolute;
+    left: 650px;
+    top: 175px;
+    width: 450px;
+    height: 140px;
+}

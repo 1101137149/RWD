@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(255, 243, 178);
+}
+
+.container {
+    background-color: #fff;
+    width: 1200px;
+    margin: auto;
+}
+
+.header {
+    background-image: url(./banner.png);
+    height: 250px;
+
+    /*----float方法----*/
+    /*記得padding寫了要扣掉寬高以免爆版 沒寫就不需扣*/
+    /* padding-top: 100px;
+    padding-left: 280px;
+    padding-right: 100px; */
+
+
+    /*----position方法----*/
+    position: relative;
+}
+
+.header h1 {
+    background-color: rgba(255, 00, 00, 0.5);
+    /*----float方法----*/
+    /* float: left; */
+
+    /*----position方法----*/
+    position: absolute;
+    left: 270px;
+    top: 100px;
+}
+
+.header h1 img {}
+
+.header ul {
+
+    /*----float方法----*/
+    /* float: right; */
+
+    /*----position方法----*/
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    height: 60px;
+}
+
+.header li {
+    float: left;
+    /*縮排的符號 設定none 點點消失*/
+    list-style: none;
+}
+
+.header li a {
+    margin-right: 15px;
+}
+
+.header li a:hover {}
+
+.nav {
+    background-color: rgba(255, 137, 139, 1.00);
+    /*float強制設高 寬原先設定就回來*/
+    /* height: 60px; */
+
+    /*自動抓高*/
+    overflow: hidden;
+    /*想讓框置中就設padding*/
+    padding: 20px;
+}
+
+.nav ul {
+    background-color: rgb(172, 56, 58);
+}
+
+.nav li {
+    /*縮排的符號 設定none 點點消失*/
+    list-style: none;
+    float: left;
+}
+
+.nav li a {
+    background-color: rgb(137, 202, 255);
+    display: block;
+    width: 150px;
+    height: 40px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.nav li a:hover {}
+
+.content {
+    background-color: rgb(236, 166, 238);
+    padding: 20px;
+}
+
+.content h3 {
+    margin-bottom: 20px;
+
+    /*不想向上遞補就在不想遞補的頭下clear 以下的段落就不會吃float  (原在.content img設定float)*/
+    clear: both;
+}
+
+.content p {
+    margin-bottom: 15px;
+
+}
+
+.content img {
+    /*圖繞文比較適合用float*/
+    float: left;
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: rgb(175, 173, 173);
+    color: #fff;
+    /*paddind方法設定*/
+    /* 
+    height: 60px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px; */
+
+    /*position方法設定*/
+    position: relative;
+    height: 80px;
+}
+
+.footer h2 {
+    /*paddind方法設定*/
+    /* float: left; */
+
+    /*position方法設定*/
+    position: absolute;
+    left: 400px;
+    top: 15px;
+}
+
+.footer h4 {
+    /*paddind方法設定*/
+    /* float: right;
+    padding-top: 30px; */
+
+    /*position方法設定*/
+    position: absolute;
+    left: 650px;
+    top: 40px;
+}

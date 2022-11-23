@@ -1,0 +1,32 @@
+a {
+    color: red;
+
+}
+
+/*滑鼠滑過*/
+a:hover {
+
+    color: aqua;
+    /*底線設定*/
+    text-decoration: none;
+    font-size: 30px;
+}
+
+
+/*正常
+a:link {
+    color: rgb(255, 61, 61);
+}
+*/
+
+/*瀏覽過後(通常少用)
+a:visited {
+    color: aquamarine;
+}
+*/
+/*滑鼠按下(通常少用)
+a:active {
+    color: aliceblue;
+
+}
+*/

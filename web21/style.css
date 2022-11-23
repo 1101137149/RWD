@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+html,
+body {
+    font-family: Arial, Helvetica, "微軟正黑體", sans-serif;
+}
+
+.header {
+    background-color: rgb(221, 248, 190);
+    height: 100px;
+    position: relative;
+}
+
+.header h1 {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+}
+
+.header ul {
+    position: absolute;
+    right: 50px;
+    top: 30px;
+}
+
+.header li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+}
+
+.header li a {}
+
+.header li a:hover {}
+
+.banner {}
+
+.banner img {
+    width: 100%;
+    height: auto;
+
+    /*插入圖片方式的會放在對齊基線上 所以要設定對齊底線*/
+    vertical-align: bottom;
+}
+
+.office {
+    display: flex;
+    background-color: rgb(248, 163, 163);
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.office .ofbox {
+    background-color: rgb(169, 168, 233);
+    width: 20%;
+    margin: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.office .ofbox img {
+    /*最大無限大 最小無限小*/
+    /*width: 100%;*/
+    /*最大原圖大  最小無限小*/
+    max-width: 100%;
+    height: auto;
+
+}
+
+.office .ofbox p {}
+
+.ad {}
+
+.adbox {}
+
+.ad img {}
+
+.nav {}
+
+.nav .navbox {}
+
+.nav .navbox p {}
+
+.nav .navbox ul {}
+
+.nav .navbox li {}
+
+.nav .navbox li a {}
+
+.nav .navbox li a:hover {}
+
+.footer {}
+
+.footer h2 {}
+
+.footer p {}

@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #E3E1C6;
+}
+
+.wrapper {
+	width: 1200px;
+	background-color: #FFF;
+	margin: 0 auto;
+}
+
+.header {
+	border-top: #066 20px solid;
+	border-bottom: #066 20px solid;
+}
+
+.header img {
+	vertical-align: bottom;
+}
+
+/*display: flex 要在母層下指令*/
+.box {
+	display: flex;
+
+	/*要不要折行*/
+	flex-wrap: wrap;
+	/*內容改從右到左的區塊順序*/
+	/* flex-direction: row-reverse; */
+
+}
+
+.box div {
+	width: calc(100%/7)
+}
+
+.b1 {
+	background-color: rgb(248, 190, 190);
+
+}
+
+.b2 {
+	background-color: rgb(114, 245, 201);
+
+}
+
+.b3 {
+	background-color: rgb(156, 202, 255);
+
+}
+
+.b4 {
+	background-color: rgb(148, 158, 168);
+
+}
+
+.b5 {
+	background-color: rgb(164, 214, 226);
+
+}
+
+.b6 {
+	background-color: rgb(183, 231, 161);
+
+}
+
+.b7 {
+	background-color: rgb(231, 157, 225);
+
+}
+
+.b8 {
+	background-color: rgb(161, 244, 247);
+
+}
+
+.b9 {
+	background-color: rgb(253, 228, 158);
+
+}
+
+.b10 {
+	background-color: rgb(228, 248, 171);
+
+}

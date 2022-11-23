@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(236, 252, 191);
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+    font-size: 50px;
+
+}
+
+h2 {
+    color: brown;
+    font-size: 30px;
+    background-color: #fff;
+}
+
+P {
+    letter-spacing: 1px;
+    text-align: justify;
+    font-weight: bold;
+    line-height: 30px;
+}

@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+
+
+}
+
+div {
+    background-image: url(./banner.png);
+    width: 1000px;
+    height: 150px;
+    margin: auto;
+
+    /*position用法*/
+    position: relative;
+}
+
+h1 {
+    /* background-color: pink; */
+    /*float用法*/
+    /* float: left; */
+
+    /*position用法*/
+    position: absolute;
+    left: 36px;
+    top: 14px;
+
+}
+
+
+h1 img {}
+
+
+ul {
+    /* background-color: aquamarine; */
+    /*float用法*/
+    /* float: right; */
+
+    /*position用法*/
+    position: absolute;
+    left: 431px;
+    top: 28px;
+    width: 546px;
+}
+
+li {
+    float: left;
+    list-style: none;
+}
+
+li a {
+    display: block;
+    width: 98px;
+
+    margin-right: 10px;
+    text-align: center;
+    padding-top: 100px;
+    background-repeat: no-repeat;
+
+
+
+}
+
+.A a {
+    background-image: url(./icon1.png);
+}
+
+.B a {
+    background-image: url(./icon2.png);
+}
+
+.C a {
+    background-image: url(./icon3.png);
+}
+
+.D a {
+    background-image: url(./icon4.png);
+}
+
+.E a {
+    background-image: url(./icon5.png);
+}
+
+/*把背景位置改變右上*/
+li a:hover {
+    background-position: right top;
+}

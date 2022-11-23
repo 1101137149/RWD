@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(../../share/bg.gif);
+}
+
+.container {
+    background-image: url(../../share/wrapper_bg.jpg);
+
+    width: 1200px;
+    margin: auto;
+}
+
+.header {
+    background-color: #ffb411;
+    height: 100px;
+    position: relative;
+}
+
+.header h1 {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+
+.header h1 img {}
+
+.header ul {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+}
+
+.header li {
+    list-style: none;
+    float: left;
+}
+
+.header li a {
+    margin-right: 10px;
+    color: #684c11;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header li a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.banner {}
+
+.banner img {
+    vertical-align: bottom;
+}
+
+.nav {
+
+    width: 160px;
+    float: left;
+    padding: 20px;
+}
+
+.nav ul {}
+
+.nav li {
+    list-style: none;
+}
+
+.nav li a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: #FFF 1px dashed;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav li a span {
+    font-family: "sosa";
+    margin-right: 6px;
+    vertical-align: middle;
+    font-size: 22px;
+}
+
+.nav li a:hover {
+    background-color: rgba(120, 182, 249, 0.3);
+}
+
+.content {
+    width: 1000px;
+    float: right;
+}
+
+.footer {
+    background-color: #282828;
+    color: #FFF;
+    text-align: center;
+    padding: 20px;
+    clear: both;
+}
+
+.footer h2 {}
+
+.footer h3 {}
+
+@font-face {
+    font-family: "sosa";
+    src: url(../../share/sosa-regular-webfont.ttf);
+}

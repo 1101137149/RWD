@@ -1,0 +1,16 @@
+.LLL,
+.RRR {
+    background-color: rgb(70, 70, 70);
+    color: #FFF;
+}
+
+.CCC {
+    background-color: yellow;
+    color: red;
+}
+
+td.CCC {
+    padding: 10px;
+
+
+}

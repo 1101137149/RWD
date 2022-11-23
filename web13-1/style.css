@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+
+/*  *代表所有的標籤套用此設定*/
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+
+
+div {
+    background-image: url(./banner.jpg);
+    width: 1200px;
+    height: 350px;
+    /*置中*/
+    margin: auto;
+
+
+    /*可針對div設定 但要記得扣掉原寬高 以免爆版*/
+    /*記得要扣掉高原長度 350(原高)-200(padding-top)=150(高)*/
+    /* padding-top: 200px; */
+
+    /*記得要扣掉寬原長度 1200(原寬)-660(padding-left)=540(寬)*/
+    /* padding-left: 660px; */
+
+}
+
+
+h1 {
+    background-color: red;
+
+    padding-top: 200px;
+    padding-left: 660px;
+
+}
