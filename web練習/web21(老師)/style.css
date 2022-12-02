@@ -214,6 +214,9 @@ body {
         background-color: rgb(84, 84, 84);
         width: 200px;
         padding: 20px;
+
+        /*把按鈕隱藏*/
+        display: none;
     }
 
     .header li {
@@ -246,6 +249,19 @@ body {
     }
 
     .header li a:hover {}
+
+
+    .CLOSE {
+        -webkit-transform: scale(0);
+        opacity: 0;
+
+    }
+
+    .OPEN {
+        -webkit-transform: scale(1);
+        opacity: 1;
+
+    }
 
 
 
