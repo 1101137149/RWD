@@ -207,6 +207,9 @@ body {
 
     .header h3 {
         display: block;
+
+        /*讓游標出現手手圖案*/
+        cursor: pointer;
     }
 
     .header ul {
@@ -246,22 +249,14 @@ body {
         position: absolute;
         right: -10px;
         top: -10px;
+
+        /*讓游標出現手手圖案*/
+        cursor: pointer;
+
     }
 
     .header li a:hover {}
 
-
-    .CLOSE {
-        -webkit-transform: scale(0);
-        opacity: 0;
-
-    }
-
-    .OPEN {
-        -webkit-transform: scale(1);
-        opacity: 1;
-
-    }
 
 
 
