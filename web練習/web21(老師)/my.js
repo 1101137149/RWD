@@ -14,10 +14,8 @@ $(function () {
 
     }
 
-
-    $(window).on("resize", xxx)
-
-    function xxx() {
+    //on 直接寫function執行
+    $(window).on("resize", function () {
         var N = $(window).width();
 
         //螢幕超過768的話 就要出現選單
@@ -30,7 +28,8 @@ $(function () {
         }
 
 
-    }
+    })
+
 
 
 
