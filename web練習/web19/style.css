@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(share/bg.gif);
+
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    background-image: url(share/wrapper_bg.jpg);
+
+}
+
+
+
+.header {
+    position: relative;
+    height: 100px;
+    background: rgb(253, 176, 113);
+}
+
+.header h1 {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    /* transform: translate(10px, 20px) scale(30deg); */
+
+    /*infinite 重複animation alternate反方向再撥一次*/
+    /*cubic-bezier(1, -0.01, 0, .85) 播放曲線*/
+    animation: aaa 4s infinite alternate;
+}
+
+/*translateY(10px) 動畫位置更改*/
+/*perspective 透視 數字越小 透視效果越大 */
+@keyframes aaa {
+    0% {
+        transform: perspective(200px) rotateX(0deg);
+    }
+
+
+
+
+    100% {
+        transform: perspective(200px) rotateX(360deg);
+    }
+
+}
+
+
+
+.header h1 img {}
+
+.header ul {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+
+}
+
+.header ul li {
+    list-style: none;
+    float: left;
+
+}
+
+.header ul li a {
+    display: block;
+    width: 42px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #000;
+    border-right: rgb(0, 0, 0) 1px solid;
+}
+
+/*:last-of-type or :last-child 都可以*/
+.header ul li:last-child a {
+    border-right: none;
+}
+
+.header ul li a:hover {
+    color: #FFF;
+}
+
+
+
+
+.banner {
+    /* height: 400px; */
+}
+
+.banner img {
+    /*插入圖片的方式會產生小小空細 使用vertical-align: bottom 可改善*/
+    vertical-align: bottom;
+    width: 100%;
+}
+
+
+
+.nav {
+
+    float: left;
+    width: 160px;
+    padding: 20px;
+}
+
+.nav ul {}
+
+.nav ul li {
+    list-style: none;
+}
+
+.nav ul li a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: #FFF 1px dashed;
+    /* border-bottom-style: ; */
+    text-align: center;
+}
+
+.nav ul li:last-child a {
+    border-bottom: none;
+}
+
+.nav ul li a:hover {
+    background-color: rgb(125, 142, 219);
+}
+
+.nav ul li a span {
+    font-family: "sosa";
+    margin-right: 10px;
+    font-style: normal;
+    vertical-align: middle;
+    font-size: 22px;
+    transition: all .5s;
+}
+
+.nav ul li a:hover span {
+
+    font-size: 40px;
+}
+
+.content {
+    width: 960px;
+    float: right;
+    /*設padding一定要扣掉寬度*/
+    padding: 20px;
+}
+
+.content h3 {
+
+    background-image: url(share/title_bg.png);
+    /* background-repeat: no-repeat; */
+    margin-bottom: 20px;
+    width: 600px;
+    height: 40px;
+    line-height: 40px;
+    /*文字內縮*/
+    text-indent: 20px;
+}
+
+.content h4 {
+    margin-bottom: 15px;
+    /*漸層*/
+    background-image: linear-gradient(to right, #9e6a47 50%, transparent);
+
+    /*一般*/
+    /* background-color: rgb(143, 88, 88); */
+
+    color: bisque;
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    border-left: rgb(39, 33, 33) 20px solid;
+    text-indent: 10px;
+}
+
+
+.content p {
+    margin-bottom: 15px;
+}
+
+.content img {
+    border: #FFF 10px solid;
+    margin: 10px;
+    box-shadow: 2px 2px 5px #333;
+    border-radius: 20px;
+}
+
+
+
+.footer {
+    clear: both;
+    text-align: center;
+    background-color: #000;
+    color: #FFF;
+    padding: 10px;
+}
+
+.footer h3 {}
+
+.footer p {}
+
+
+@font-face {
+    font-family: "sosa";
+    src: url(share/sosa-regular-webfont.ttf);
+
+}

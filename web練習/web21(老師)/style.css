@@ -1,0 +1,252 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    font-family: Arial, Helvetica, "微軟正黑體", sans-serif;
+}
+
+.header {
+    background-color: #adadad;
+    height: 100px;
+}
+
+.header h1 {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+}
+
+.header h3 {
+    position: absolute;
+    right: 50px;
+    top: 40px;
+    display: none;
+}
+
+.header ul {
+    position: absolute;
+    right: 50px;
+    top: 40px
+}
+
+.header li {
+    list-style: none;
+    float: left;
+}
+
+.header li a {
+    margin-right: 10px;
+    color: #333;
+}
+
+.header .close {
+    display: none;
+}
+
+.header li a:hover {}
+
+.banner {}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.office {
+    display: flex;
+
+    background-color: rgb(234, 220, 178);
+    padding: 20px 0;
+    justify-content: center;
+}
+
+.office .ofbox {
+    background-color: #8d8d8d;
+    width: 20%;
+    margin: 8px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.office .ofbox img {
+    max-width: 100%;
+    height: auto;
+}
+
+.office .ofbox p {}
+
+.ad {
+    display: flex;
+}
+
+.adbox {
+    width: 25%;
+
+}
+
+.ad img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.nav {
+    background-color: rgb(78, 78, 78);
+    display: flex;
+    justify-content: center;
+}
+
+.nav .navbox {
+    background-color: rgb(130, 130, 130);
+    width: 15%;
+    margin: 1%;
+    padding: 20px;
+}
+
+.nav .navbox p {
+    font-size: 22px;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.nav .navbox ul {}
+
+.nav .navbox li {
+    list-style: none;
+}
+
+.nav .navbox li a {
+    color: #313131;
+    text-decoration: none;
+}
+
+.nav .navbox li a:hover {}
+
+.footer {
+    background-color: #0b0b0b;
+    color: #b9b9b9;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer h2 {}
+
+.footer p {}
+
+/*===平板的CSS===*/
+@media screen and (max-width:1200px) and (min-width:769px) {
+
+    .office {
+        flex-wrap: wrap;
+    }
+
+    .office .ofbox {
+        width: 40%;
+    }
+
+
+    .ad {
+        flex-wrap: wrap;
+    }
+
+    .adbox {
+        width: 50%;
+
+    }
+
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .nav .navbox {
+
+        width: 30%;
+    }
+
+
+}
+
+
+/*===手機的CSS===*/
+@media screen and (max-width:768px) {
+
+    .office {
+        flex-wrap: wrap;
+    }
+
+    .office .ofbox {
+        width: 80%;
+    }
+
+
+    .ad {
+        flex-wrap: wrap;
+    }
+
+    .adbox {
+        width: 100%;
+
+    }
+
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .nav .navbox {
+
+        width: 60%;
+    }
+
+    .header h3 {
+        display: block;
+    }
+
+    .header ul {
+        top: 80px;
+        background-color: rgb(84, 84, 84);
+        width: 200px;
+        padding: 20px;
+    }
+
+    .header li {
+        float: none;
+    }
+
+    .header li a {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        background-color: rgb(138, 138, 138);
+        margin: 10px;
+        color: #FFF;
+        text-decoration: none;
+        text-indent: 20px;
+    }
+
+    .header .close {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #960000;
+        color: #FFF;
+        text-align: center;
+        line-height: 40px;
+        position: absolute;
+        right: -10px;
+        top: -10px;
+    }
+
+    .header li a:hover {}
+
+
+
+}
